@@ -33,6 +33,7 @@ class Register : AppCompatActivity() {
 
         loginText.setOnClickListener{
             val intent = Intent(this, Login::class.java)
+            startActivity(intent)
         }
 
 
@@ -47,13 +48,13 @@ class Register : AppCompatActivity() {
 //        auth.createUserWithEmailAndPassword(email, password)
 //            .addOnCompleteListener(this) { task ->
 //                if (task.isSuccessful) {
-//                    // Sign in success, update UI with the signed-in user's information
+//                   
 //                    val user = auth.currentUser
 //                    val intent = Intent(this, DashboardActivity::class.java)
 //                    startActivity(intent)
 //
 //                } else {
-//                    // If sign in fails, display a message to the user.
+//
 //                    Toast.makeText(
 //                        baseContext, "Authentication failed.",
 //                        Toast.LENGTH_SHORT
