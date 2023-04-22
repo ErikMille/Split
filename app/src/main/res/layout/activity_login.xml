@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:hint="phone"
+        android:maxLines="1"
+        android:layout_marginStart ="20dp"
+        android:layout_marginEnd ="20dp"
+        android:layout_paddingStart ="20dp"
+        android:layout_paddingEnd ="0dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:maxLines="1"
+        android:layout_marginStart ="20dp"
+        android:layout_marginEnd ="20dp"
+        android:layout_paddingStart ="20dp"
+        android:layout_paddingEnd ="0dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart ="20dp"
+        android:layout_marginEnd ="20dp"
+        android:layout_marginTop ="40dp"
+        android:text="Login"
+        android:id="@+id/login_button"
+        />
+
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Don't have the account">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/register_text"
+            android:text="Register">
+        </TextView>
+        
+    </LinearLayout>
+
+</LinearLayout>
