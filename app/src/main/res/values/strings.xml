@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SplitExpenses</string>
+    <string name="settings_xml">Settings</string>
+    <string name="refresh_xml">Refresh</string>
+    <string name="log_xml">Log Off</string>
+    <string name="profile_xml">Profile Page</string>
 </resources>
