@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class Register : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
@@ -32,7 +32,7 @@ class Register : AppCompatActivity() {
         loginText = findViewById(R.id.login_text)
 
         loginText.setOnClickListener{
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 

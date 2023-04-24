@@ -4,4 +4,10 @@
     <string name="refresh_xml">Refresh</string>
     <string name="log_xml">Log Off</string>
     <string name="profile_xml">Profile Page</string>
+    <string-array name="tabTitles">
+        <item>Friends</item>
+        <item>Groups</item>
+        <item>Search</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

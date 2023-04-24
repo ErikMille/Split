@@ -10,9 +10,8 @@ import androidx.appcompat.widget.AppCompatButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
 
-class Login : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -32,7 +31,7 @@ class Login : AppCompatActivity() {
         registerText = findViewById(R.id.register_text)
 
         registerText.setOnClickListener{
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
