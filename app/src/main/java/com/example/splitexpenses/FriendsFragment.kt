@@ -51,7 +51,7 @@ class FriendsFragment : Fragment() {
         val myNames = arrayOf("name1","name2","name3","name","name","name","name","name","name","name10")
         for (i in 0..9) {
             val imageModel = FriendModel()
-            imageModel.setNames(myNames[i])
+            imageModel.setName(myNames[i])
             this.list?.add(imageModel)
         }
         render()

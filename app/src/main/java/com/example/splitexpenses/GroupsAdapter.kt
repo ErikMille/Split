@@ -1,5 +1,6 @@
 package com.example.splitexpenses
 
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -40,12 +41,10 @@ class GroupsAdapter (private val imageModelArrayList: MutableList<GroupModel>) :
 
         override fun onClick(v: View) {
             try {
-//                val intent = Intent(v.context, Article::class.java)
-//                intent.putExtra("title", this.info?.getNames())
-//                intent.putExtra("description", this.info?.getDescription())
-//                intent.putExtra("url", this.info?.getUrl())
-//                intent.putExtra("imageUrl", this.info?.getUrlToImage())
-//                v.context.startActivity(intent)
+                val intent = Intent(v.context, GroupActivity::class.java)
+                intent.putExtra("title", this.info?.getNames())
+                intent.putExtra("id", this.info?.getId())
+                v.context.startActivity(intent)
             } catch (e: Exception) {
                 Log.i("Activities", "Null input")
             }

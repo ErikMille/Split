@@ -40,12 +40,7 @@ class FriendsInGroupAdapter (private val imageModelArrayList: MutableList<Friend
 
         override fun onClick(v: View) {
             try {
-//                val intent = Intent(v.context, Article::class.java)
-//                intent.putExtra("title", this.info?.getNames())
-//                intent.putExtra("description", this.info?.getDescription())
-//                intent.putExtra("url", this.info?.getUrl())
-//                intent.putExtra("imageUrl", this.info?.getUrlToImage())
-//                v.context.startActivity(intent)
+
             } catch (e: Exception) {
                 Log.i("Activities", "Null input")
             }

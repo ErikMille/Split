@@ -21,6 +21,7 @@ class FriendsAdapter (private val imageModelArrayList: MutableList<FriendModel>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val info = imageModelArrayList[position]
         holder.nameMsg.text = info.getNames()
+        holder.debtMsg.text = info.getYourDebts()
         holder.info = info
     }
 
@@ -32,6 +33,7 @@ class FriendsAdapter (private val imageModelArrayList: MutableList<FriendModel>)
 
         var imgView = itemView.findViewById<View>(R.id.icon) as ImageView
         var nameMsg = itemView.findViewById<View>(R.id.firstLine) as TextView
+        var debtMsg = itemView.findViewById<View>(R.id.debt) as TextView
         var info: FriendModel? = FriendModel()
 
         init {
@@ -40,12 +42,7 @@ class FriendsAdapter (private val imageModelArrayList: MutableList<FriendModel>)
 
         override fun onClick(v: View) {
             try {
-//                val intent = Intent(v.context, Article::class.java)
-//                intent.putExtra("title", this.info?.getNames())
-//                intent.putExtra("description", this.info?.getDescription())
-//                intent.putExtra("url", this.info?.getUrl())
-//                intent.putExtra("imageUrl", this.info?.getUrlToImage())
-//                v.context.startActivity(intent)
+//
             } catch (e: Exception) {
                 Log.i("Activities", "Null input")
             }
