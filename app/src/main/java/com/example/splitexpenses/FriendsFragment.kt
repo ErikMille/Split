@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.json.JSONObject
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +22,7 @@ class FriendsFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private var list: ArrayList<CardModel>? = arrayListOf<CardModel>()
+    private var list: ArrayList<FriendModel>? = arrayListOf<FriendModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +50,7 @@ class FriendsFragment : Fragment() {
         val myImageList = arrayOf(R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship)
         val myNames = arrayOf("name1","name2","name3","name","name","name","name","name","name","name10")
         for (i in 0..9) {
-            val imageModel = CardModel()
+            val imageModel = FriendModel()
             imageModel.setNames(myNames[i])
             this.list?.add(imageModel)
         }

@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class FriendsAdapter (private val imageModelArrayList: MutableList<FriendModel>) : RecyclerView.Adapter<FriendsAdapter.ViewHolder>() {
+class FriendsInGroupAdapter (private val imageModelArrayList: MutableList<FriendModel>) : RecyclerView.Adapter<FriendsInGroupAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)

@@ -22,7 +22,7 @@ class GroupsFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private var list: ArrayList<CardModel>? = arrayListOf<CardModel>()
+    private var list: ArrayList<GroupModel>? = arrayListOf<GroupModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +50,7 @@ class GroupsFragment : Fragment() {
         val myImageList = arrayOf(R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship, R.drawable.ship)
         val myNames = arrayOf("name3","name2","name1","name","name","name","name","name","name","name10")
         for (i in 0..9) {
-            val imageModel = CardModel()
+            val imageModel = GroupModel()
             imageModel.setNames(myNames[i])
             this.list?.add(imageModel)
         }

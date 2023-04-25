@@ -7,16 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
-import android.content.Intent
 
 
-
-class GroupsAdapter (private val imageModelArrayList: MutableList<CardModel>) : RecyclerView.Adapter<GroupsAdapter.ViewHolder>() {
+class GroupsAdapter (private val imageModelArrayList: MutableList<GroupModel>) : RecyclerView.Adapter<GroupsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val v = inflater.inflate(R.layout.friend_card, parent, false)
+        val v = inflater.inflate(R.layout.group_card, parent, false)
 
         return ViewHolder(v)
     }
@@ -35,7 +32,7 @@ class GroupsAdapter (private val imageModelArrayList: MutableList<CardModel>) : 
 
         var imgView = itemView.findViewById<View>(R.id.icon) as ImageView
         var nameMsg = itemView.findViewById<View>(R.id.firstLine) as TextView
-        var info: CardModel? = CardModel()
+        var info: GroupModel? = GroupModel()
 
         init {
             itemView.setOnClickListener(this)
