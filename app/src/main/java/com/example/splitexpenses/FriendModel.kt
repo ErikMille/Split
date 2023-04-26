@@ -23,7 +23,6 @@ class FriendModel {
     }
 
     fun getYourDebts(): String {
-
         if (modelDebt == 0.0) { return "settled up"}
         if (modelDebt > 0.0) { return "You Owe " + modelDebt.toString() }
         if (modelDebt < 0.0) { return "Owes you " + Math.abs(modelDebt).toString() }

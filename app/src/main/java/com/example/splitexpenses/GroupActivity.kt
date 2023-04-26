@@ -24,6 +24,7 @@ class GroupActivity : AppCompatActivity() {
             imageModel.setDebt(myDebts[i])
             this.list?.add(imageModel)
         }
+
         render()
     }
 
