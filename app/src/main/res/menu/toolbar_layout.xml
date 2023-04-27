@@ -1,11 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/refresh"
-        android:icon="@android:drawable/ic_popup_sync"
-        android:title="@string/refresh_xml"
-        app:showAsAction="ifRoom"></item>
-    <item
         android:id="@+id/profile"
         android:icon="@drawable/profile"
         android:title="@string/profile_xml"
