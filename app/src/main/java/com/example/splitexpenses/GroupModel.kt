@@ -1,10 +1,15 @@
 package com.example.splitexpenses
 
+import android.media.Image
+
 class GroupModel {
     var modelName: String? = null
     var modelId: String? = null
+    var modelImage: Int? = null
 
-
+    fun setNames(name: String) {
+        this.modelName = name
+    }
     fun getNames(): String {
         return modelName.toString()
     }
@@ -17,8 +22,14 @@ class GroupModel {
         return modelId.toString()
     }
 
-    fun setNames(name: String) {
-        this.modelName = name
+    fun setImage(image: Int) {
+        this.modelImage = image
     }
+
+    fun getImage(): Int? {
+        return modelImage
+    }
+
+
 
 }

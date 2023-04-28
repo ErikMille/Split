@@ -22,6 +22,7 @@ class GroupsAdapter (private val imageModelArrayList: MutableList<GroupModel>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val info = imageModelArrayList[position]
         holder.nameMsg.text = info.getNames()
+        holder.imgView.setImageResource(info.getImage()!!)
         holder.info = info
     }
 

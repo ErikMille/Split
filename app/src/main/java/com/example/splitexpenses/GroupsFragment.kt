@@ -52,6 +52,7 @@ class GroupsFragment : Fragment() {
         for (i in 0..9) {
             val imageModel = GroupModel()
             imageModel.setNames(myNames[i])
+            imageModel.setImage(myImageList[i]!!)
             this.list?.add(imageModel)
         }
         render()
